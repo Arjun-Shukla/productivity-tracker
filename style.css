@@ -2,6 +2,7 @@ body {
   font-family: Arial;
   background: #f4f4f4;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -94,6 +95,78 @@ li {
   border-radius: 5px;
 }
 
+/*Footer Styling*/
+
+.footer {
+  margin-left: 0px;
+  /* border-radius: 10px; */
+  width: 100%;
+  margin-top: 55px;
+  background: #0f172a;
+  padding: 30px 5px;
+  background: linear-gradient(180deg, #020617, #0a0f2c);
+  border-top: 1px solid rgba(0, 229, 255, 0.2);
+  box-shadow: 0 -5px 30px rgba(0, 229, 255, 0.05);
+}
+
+.footer-container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-container h2 {
+  color: #3b82f6;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+}
+
+.footer-container p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  /* width: 80%; */
+  text-align:center;
+  /* margin-left: 30px; */
+}
+
+.links h4 {
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+  color: #3b82f6;
+}
+
+.links p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.About {
+  color: #ff6a00;
+  width: 100%;
+  line-height: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.links a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.resource {
+  line-height: 15px;
+  font-family: "Poppins", sans-serif;
+  /* width: 100%; */
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
   .navbar {
@@ -110,7 +183,7 @@ li {
 
   .nav-links {
     position: absolute;
-    top: 32px;
+    top: 120px;
     right: 0;
     background: rgb(255, 255, 255);
     flex-direction: column;
@@ -118,11 +191,11 @@ li {
     display: none;
     padding: 7px;
     /* transition: all 0.3s ease; */
-    background: #00e5ff;
-    box-shadow: 0 0 8px rgba(0, 229, 255, 0.7);
+    /* background: #00e5ff;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.7); */
     transition: all 0.3s ease;
     z-index: 1000;
-    gap: 15px;
+    gap: 5px;
     transform: translateX(100%);
     opacity: 0;
     transition: all 0.3s ease;
@@ -136,13 +209,36 @@ li {
     opacity: 1;
   }
 
-  .nav-links:hover {
+  /* .nav-links:hover {
     background: #00b8d4;
     box-shadow: 0 0 12px rgba(0, 229, 255, 1);
-  }
+  } */
 
   .hamburger {
+    color: white;
     display: block;
     z-index: 200;
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    top: 15px;
+  }
+
+    .links {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .links a {
+    font-size: 9px;
+  }
+
+  .About {
+    font-size: 9px;
+  }
+
+  .resource {
+    line-height: 15px;
+    width: 90px;
   }
 }

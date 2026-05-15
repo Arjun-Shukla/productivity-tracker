@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial;
   background: #f4f4f4;
@@ -5,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 
+/*Navbar styling*/
 .navbar {
   position: fixed;
   left: 0;
@@ -99,7 +104,6 @@ li {
 
 .footer {
   margin-left: 0px;
-  /* border-radius: 10px; */
   width: 100%;
   margin-top: 55px;
   background: #0f172a;
@@ -126,9 +130,7 @@ li {
 .footer-container p {
   font-family: "Poppins", sans-serif;
   color: white;
-  /* width: 80%; */
-  text-align:center;
-  /* margin-left: 30px; */
+  text-align: center;
 }
 
 .links h4 {
@@ -164,10 +166,9 @@ li {
 .resource {
   line-height: 15px;
   font-family: "Poppins", sans-serif;
-  /* width: 100%; */
 }
 
-/* MOBILE */
+/* MOBILE responsiveness */
 @media (max-width: 768px) {
   .navbar {
     top: 12px;
@@ -190,9 +191,6 @@ li {
     width: 50px;
     display: none;
     padding: 7px;
-    /* transition: all 0.3s ease; */
-    /* background: #00e5ff;
-    box-shadow: 0 0 8px rgba(0, 229, 255, 0.7); */
     transition: all 0.3s ease;
     z-index: 1000;
     gap: 5px;
@@ -209,11 +207,6 @@ li {
     opacity: 1;
   }
 
-  /* .nav-links:hover {
-    background: #00b8d4;
-    box-shadow: 0 0 12px rgba(0, 229, 255, 1);
-  } */
-
   .hamburger {
     color: white;
     display: block;
@@ -224,7 +217,7 @@ li {
     top: 15px;
   }
 
-    .links {
+  .links {
     gap: 15px;
     margin-top: 20px;
   }
